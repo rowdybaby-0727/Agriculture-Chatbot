@@ -5,18 +5,12 @@ def get_response(user_input):
 
     if "crop" in user_input:
         return "You can grow rice, wheat, maize based on your region."
-
     elif "soil" in user_input:
         return "Soil should be fertile and well-drained."
-
     elif "water" in user_input:
         return "Crops need proper irrigation."
-
-    elif "fertilizer" in user_input:
-        return "Use organic or chemical fertilizers."
-
     else:
-        return "Sorry, I don't understand. Ask farming questions."
+        return "Ask farming related questions."
 
 st.title("🌾 Agriculture Chatbot")
 
