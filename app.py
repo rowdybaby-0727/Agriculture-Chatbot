@@ -1,6 +1,5 @@
 import streamlit as st
 from responses import get_response
-
 st.set_page_config(page_title="Agriculture Chatbot")
 
 st.title("🌾 Agriculture Chatbot")
