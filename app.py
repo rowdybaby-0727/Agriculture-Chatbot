@@ -1,6 +1,5 @@
 import streamlit as st
 
-# Simple chatbot logic inside same file (NO ERROR GUARANTEED)
 def get_response(user_input):
     user_input = user_input.lower()
 
@@ -19,11 +18,9 @@ def get_response(user_input):
     else:
         return "Sorry, I don't understand. Ask farming questions."
 
-# UI
 st.title("🌾 Agriculture Chatbot")
 
 user_input = st.text_input("Enter your question:")
 
 if user_input:
-    response = get_response(user_input)
-    st.success(response)
+    st.success(get_response(user_input))
